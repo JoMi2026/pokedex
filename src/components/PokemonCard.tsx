@@ -1,5 +1,13 @@
+interface Pokemon {
+    name:string,
+    imgSrc?:string,
+};
 
-function PokemonCard({pokemon}){
+interface PokemonCardProps {
+    pokemon:Pokemon;
+}
+
+function PokemonCard({pokemon} :PokemonCardProps){
     
     return(
         <figure>
